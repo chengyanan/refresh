@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40781FDB1B5CDA7C00508C64 /* YNCycleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40781FDA1B5CDA7C00508C64 /* YNCycleLayer.m */; };
 		407B64A81B58B34A003007B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64A71B58B34A003007B5 /* main.m */; };
 		407B64AB1B58B34A003007B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64AA1B58B34A003007B5 /* AppDelegate.m */; };
 		407B64AE1B58B34A003007B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64AD1B58B34A003007B5 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40781FD91B5CDA7C00508C64 /* YNCycleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNCycleLayer.h; sourceTree = "<group>"; };
+		40781FDA1B5CDA7C00508C64 /* YNCycleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNCycleLayer.m; sourceTree = "<group>"; };
 		407B64A21B58B34A003007B5 /* YNRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YNRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407B64A61B58B34A003007B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407B64A71B58B34A003007B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		407B64991B58B34A003007B5 = {
 			isa = PBXGroup;
 			children = (
+				40781FD91B5CDA7C00508C64 /* YNCycleLayer.h */,
+				40781FDA1B5CDA7C00508C64 /* YNCycleLayer.m */,
 				407B64CE1B58DD60003007B5 /* UIScrollView+CYNRefresh.h */,
 				407B64CF1B58DD60003007B5 /* UIScrollView+CYNRefresh.m */,
 				407B64CB1B58B501003007B5 /* YNRefreshHeaderView.h */,
@@ -234,6 +239,7 @@
 				407B64D01B58DD60003007B5 /* UIScrollView+CYNRefresh.m in Sources */,
 				407B64CD1B58B501003007B5 /* YNRefreshHeaderView.m in Sources */,
 				407B64A81B58B34A003007B5 /* main.m in Sources */,
+				40781FDB1B5CDA7C00508C64 /* YNCycleLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +436,7 @@
 				407B64C71B58B34A003007B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		407B64C81B58B34A003007B5 /* Build configuration list for PBXNativeTarget "YNRefreshTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				407B64CA1B58B34A003007B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class YNRefreshHeaderView;
+@protocol YNRefreshHeaderViewDelegate <NSObject>
+
+@optional
+- (void)refreshHeaderView:(YNRefreshHeaderView *)headerView removerMyObserve:(BOOL)remove;
+- (void)resetScrollViewContentInset;
+@end
 
 typedef enum{
     YNPullRefreshPulling = 0,
@@ -14,12 +21,17 @@ typedef enum{
     YNPullRefreshLoading,
 } YNPullRefreshState;
 
-@interface YNRefreshHeaderView : UIView
+@interface YNRefreshHeaderView : UIView<UIScrollViewDelegate>
+
+@property (nonatomic, copy) void (^refreshActionHandler)(void);
 
 @property (nonatomic, assign) YNPullRefreshState state;
 
-- (void)ynRefreshScrollViewDidScroll:(UIScrollView *)scrollView;
-//- (void)ynRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView;
-//- (void)ynRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView;
+@property (nonatomic, assign) id<YNRefreshHeaderViewDelegate> delegate;
 
+
+
+- (void)successStopRefresh;
+
+- (void)failureStopRefresh;
 @end

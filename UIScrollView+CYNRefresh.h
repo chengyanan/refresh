@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YNRefreshHeaderView.h"
 @class YNRefreshHeaderView;
-@interface UIScrollView (CYNRefresh)
+@interface UIScrollView (CYNRefresh)<YNRefreshHeaderViewDelegate>
 
 - (void)addHeaderRefreshWithActionHandler:(void (^)(void))actionHandler;
 
