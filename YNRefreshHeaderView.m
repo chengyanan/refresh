@@ -50,12 +50,15 @@
 }
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
     
+    if (self.state == YNPullRefreshLoading) {
+        
+        
         CGFloat offset = MAX(scrollView.contentOffset.y * -1, 0);
-    
-         UIEdgeInsets currentInsets = scrollView.contentInset;
-    
+        
+        UIEdgeInsets currentInsets = scrollView.contentInset;
+        
         currentInsets.top = MIN(offset, SelfHeight);
-    
+        
         [UIView animateWithDuration:0.3
                               delay:0
                             options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState
@@ -63,6 +66,9 @@
                              scrollView.contentInset = currentInsets;
                          }
                          completion:NULL];
+    }
+    
+    
 }
 
 #pragma mark - observing
@@ -77,7 +83,7 @@
 //    NSLog(@"contentOffset - %@", NSStringFromCGPoint(contentOffset));
       CGFloat top = SelfHeight - OffsetHeight;
   
-    if (contentOffset.y >=-SelfHeight-4) {
+    if (contentOffset.y >-SelfHeight-4) {
         
         if (contentOffset.y >= -top) {
             self.cycleLayer.hidden = YES;
@@ -107,14 +113,21 @@
 }
 
 - (void)successStopRefresh {
+    
+    self.state = YNPullRefreshNormal;
+    
     [self.activityView  stopAnimating];
     
-    if ([self.delegate respondsToSelector:@selector(resetScrollViewContentInset)]) {
-        
-        [self.delegate resetScrollViewContentInset];
-    }
 }
 
+- (void)failureStopRefresh {
+    
+    //以后也可以加提示
+    
+    self.state = YNPullRefreshNormal;
+    
+    [self.activityView  stopAnimating];
+}
 
 #pragma mark - getters and setters
 
@@ -140,6 +153,9 @@
 }
 
 - (void)setState:(YNPullRefreshState)state {
+    
+    _state = state;
+    
     switch (state) {
         case YNPullRefreshPulling:
             
@@ -160,12 +176,13 @@
                 [self.delegate refreshHeaderView:self removerMyObserve:YES];
             }
             
-            
-            
-            
-            
             break;
         case YNPullRefreshNormal:
+            
+            if ([self.delegate respondsToSelector:@selector(resetScrollViewContentInset)]) {
+                
+                [self.delegate resetScrollViewContentInset];
+            }
             
             break;
         default:
