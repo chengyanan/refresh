@@ -54,7 +54,9 @@
 - (UITableView *)tableView {
     if (_tableView == nil) {
         _tableView = [[UITableView alloc] init];
-        _tableView.frame = self.view.bounds;
+//        _tableView.frame = self.view.bounds;
+        
+        _tableView.frame = CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height);
         _tableView.dataSource = self;
         _tableView.delegate = self;
     }
