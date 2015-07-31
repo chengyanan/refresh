@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40781FDB1B5CDA7C00508C64 /* YNCycleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40781FDA1B5CDA7C00508C64 /* YNCycleLayer.m */; };
 		407B64A81B58B34A003007B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64A71B58B34A003007B5 /* main.m */; };
 		407B64AB1B58B34A003007B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64AA1B58B34A003007B5 /* AppDelegate.m */; };
 		407B64AE1B58B34A003007B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64AD1B58B34A003007B5 /* ViewController.m */; };
@@ -15,9 +14,10 @@
 		407B64B31B58B34A003007B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407B64B21B58B34A003007B5 /* Images.xcassets */; };
 		407B64B61B58B34A003007B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407B64B41B58B34A003007B5 /* LaunchScreen.xib */; };
 		407B64C21B58B34A003007B5 /* YNRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64C11B58B34A003007B5 /* YNRefreshTests.m */; };
-		407B64CD1B58B501003007B5 /* YNRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64CC1B58B501003007B5 /* YNRefreshHeaderView.m */; };
-		407B64D01B58DD60003007B5 /* UIScrollView+CYNRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B64CF1B58DD60003007B5 /* UIScrollView+CYNRefresh.m */; };
 		40C9ED821B6B6FD6003E7DC4 /* refresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40C9ED811B6B6FD6003E7DC4 /* refresh.gif */; };
+		40C9ED981B6B7558003E7DC4 /* UIScrollView+CYNRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C9ED931B6B7558003E7DC4 /* UIScrollView+CYNRefresh.m */; };
+		40C9ED991B6B7558003E7DC4 /* YNCycleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C9ED951B6B7558003E7DC4 /* YNCycleLayer.m */; };
+		40C9ED9A1B6B7558003E7DC4 /* YNRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C9ED971B6B7558003E7DC4 /* YNRefreshHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		40781FD91B5CDA7C00508C64 /* YNCycleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNCycleLayer.h; sourceTree = "<group>"; };
-		40781FDA1B5CDA7C00508C64 /* YNCycleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNCycleLayer.m; sourceTree = "<group>"; };
 		407B64A21B58B34A003007B5 /* YNRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YNRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407B64A61B58B34A003007B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407B64A71B58B34A003007B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,11 +44,13 @@
 		407B64BB1B58B34A003007B5 /* YNRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		407B64C01B58B34A003007B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407B64C11B58B34A003007B5 /* YNRefreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNRefreshTests.m; sourceTree = "<group>"; };
-		407B64CB1B58B501003007B5 /* YNRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNRefreshHeaderView.h; sourceTree = "<group>"; };
-		407B64CC1B58B501003007B5 /* YNRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNRefreshHeaderView.m; sourceTree = "<group>"; };
-		407B64CE1B58DD60003007B5 /* UIScrollView+CYNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYNRefresh.h"; sourceTree = "<group>"; };
-		407B64CF1B58DD60003007B5 /* UIScrollView+CYNRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYNRefresh.m"; sourceTree = "<group>"; };
 		40C9ED811B6B6FD6003E7DC4 /* refresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = refresh.gif; sourceTree = "<group>"; };
+		40C9ED921B6B7558003E7DC4 /* UIScrollView+CYNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYNRefresh.h"; sourceTree = "<group>"; };
+		40C9ED931B6B7558003E7DC4 /* UIScrollView+CYNRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYNRefresh.m"; sourceTree = "<group>"; };
+		40C9ED941B6B7558003E7DC4 /* YNCycleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNCycleLayer.h; sourceTree = "<group>"; };
+		40C9ED951B6B7558003E7DC4 /* YNCycleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNCycleLayer.m; sourceTree = "<group>"; };
+		40C9ED961B6B7558003E7DC4 /* YNRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNRefreshHeaderView.h; sourceTree = "<group>"; };
+		40C9ED971B6B7558003E7DC4 /* YNRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNRefreshHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +74,6 @@
 		407B64991B58B34A003007B5 = {
 			isa = PBXGroup;
 			children = (
-				40781FD91B5CDA7C00508C64 /* YNCycleLayer.h */,
-				40781FDA1B5CDA7C00508C64 /* YNCycleLayer.m */,
-				407B64CE1B58DD60003007B5 /* UIScrollView+CYNRefresh.h */,
-				407B64CF1B58DD60003007B5 /* UIScrollView+CYNRefresh.m */,
-				407B64CB1B58B501003007B5 /* YNRefreshHeaderView.h */,
-				407B64CC1B58B501003007B5 /* YNRefreshHeaderView.m */,
 				407B64A41B58B34A003007B5 /* YNRefresh */,
 				407B64BE1B58B34A003007B5 /* YNRefreshTests */,
 				407B64A31B58B34A003007B5 /* Products */,
@@ -98,6 +92,7 @@
 		407B64A41B58B34A003007B5 /* YNRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				40C9ED911B6B7558003E7DC4 /* refresh */,
 				407B64A91B58B34A003007B5 /* AppDelegate.h */,
 				407B64AA1B58B34A003007B5 /* AppDelegate.m */,
 				407B64AC1B58B34A003007B5 /* ViewController.h */,
@@ -135,6 +130,19 @@
 				407B64C01B58B34A003007B5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40C9ED911B6B7558003E7DC4 /* refresh */ = {
+			isa = PBXGroup;
+			children = (
+				40C9ED921B6B7558003E7DC4 /* UIScrollView+CYNRefresh.h */,
+				40C9ED931B6B7558003E7DC4 /* UIScrollView+CYNRefresh.m */,
+				40C9ED941B6B7558003E7DC4 /* YNCycleLayer.h */,
+				40C9ED951B6B7558003E7DC4 /* YNCycleLayer.m */,
+				40C9ED961B6B7558003E7DC4 /* YNRefreshHeaderView.h */,
+				40C9ED971B6B7558003E7DC4 /* YNRefreshHeaderView.m */,
+			);
+			path = refresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,12 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C9ED981B6B7558003E7DC4 /* UIScrollView+CYNRefresh.m in Sources */,
 				407B64AE1B58B34A003007B5 /* ViewController.m in Sources */,
+				40C9ED991B6B7558003E7DC4 /* YNCycleLayer.m in Sources */,
 				407B64AB1B58B34A003007B5 /* AppDelegate.m in Sources */,
-				407B64D01B58DD60003007B5 /* UIScrollView+CYNRefresh.m in Sources */,
-				407B64CD1B58B501003007B5 /* YNRefreshHeaderView.m in Sources */,
+				40C9ED9A1B6B7558003E7DC4 /* YNRefreshHeaderView.m in Sources */,
 				407B64A81B58B34A003007B5 /* main.m in Sources */,
-				40781FDB1B5CDA7C00508C64 /* YNCycleLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
