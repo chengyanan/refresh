@@ -48,6 +48,8 @@
         [self.delegate refreshHeaderView:self removerMyObserve:NO];
     }
 }
+
+
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
     
     if (self.state == YNPullRefreshLoading) {
@@ -139,6 +141,7 @@
         self.cycleLayer.newAngle = newAngle;
         
     }
+    
 }
 
 - (UIActivityIndicatorView *)activityView {

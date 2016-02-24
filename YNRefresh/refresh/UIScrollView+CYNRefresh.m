@@ -87,8 +87,8 @@ static char UIScrollViewPullToRefreshView;
     
 }
 
-- (BOOL)showRefresh {
-    
-    return !self.headerRefreshView.hidden;
-}
+//- (BOOL)showRefresh {
+//    
+//    return !self.headerRefreshView.hidden;
+//}
 @end
